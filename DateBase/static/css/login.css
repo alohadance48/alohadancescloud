@@ -1,0 +1,93 @@
+/* Общие стили */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Черный фон для страницы */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    transition: background-color 0.3s, color 0.3s; /* Плавный переход */
+}
+
+.container {
+    background-color: #222; /* Темно-серый фон для контейнера */
+    padding: 20px; /* Равномерные отступы внутри контейнера */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
+    width: 400px; /* Ширина контейнера */
+    transition: background-color 0.3s; /* Плавный переход */
+}
+
+h1 {
+    text-align: center;
+    color: #fff; /* Белый цвет заголовка */
+    font-size: 20px; /* Размер заголовка */
+    margin-bottom: 15px; /* Отступ снизу для заголовка */
+}
+
+/* Стили для формы */
+form {
+    display: flex;
+    flex-direction: column; /* Вертикальное расположение элементов формы */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    padding: 10px; /* Отступы внутри полей ввода */
+    margin-bottom: 15px; /* Отступ между полями ввода */
+    border-radius: 4px;
+    border: 1px solid #444; /* Темная граница для полей ввода */
+    color: #fff; /* Белый цвет текста в полях ввода */
+    background-color: #333; /* Темный фон для полей ввода */
+    width: 100%; /* Ширина полей ввода на 100% контейнера */
+}
+
+input[type="submit"] {
+    padding: 10px; /* Отступы внутри кнопки */
+    border-radius: 4px;
+    border: none;
+    background-color: #007bff; /* Цвет кнопки */
+    color: white; /* Белый цвет текста кнопки */
+    cursor: pointer;
+    width: 100%; /* Ширина кнопки на 100% контейнера */
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Цвет кнопки при наведении */
+}
+
+/* Стили для светлой темы */
+body.light {
+    background-color: #f0f0f0; /* Светлый фон для страницы */
+}
+
+.container.light {
+    background-color: #fff; /* Белый фон для контейнера */
+}
+
+h1.light {
+    color: #000; /* Черный цвет заголовка для светлой темы */
+}
+
+input[type="text"].light,
+input[type="email"].light,
+input[type="password"].light {
+    background-color: #fff; /* Белый фон для полей ввода в светлой теме */
+    color: #000; /* Черный цвет текста в полях ввода */
+    border: 1px solid #ccc; /* Светлая граница для полей ввода */
+}
+
+input[type="submit"].light {
+    background-color: #007bff; /* Цвет кнопки */
+    color: white; /* Белый цвет текста кнопки */
+}
+
+input[type="submit"].light:hover {
+    background-color: #0056b3; /* Цвет кнопки при наведении */
+}
